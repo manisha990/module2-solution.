@@ -1,73 +1,352 @@
-# module2-solution.
+# module2-solution 
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewpoint" content="width=device-width, initial-scale=1">
-<title>Restaurant Menu</title>
+
+<title>Responsive Layout</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
+<body>
+<h1>Our Menu</h1>
 
-<style>
 
-/* all h2 elements */
 
-.column {
-flex: 33%;
-height: 200 px;
-padding: 10px;
-border: 2px;
-margin: 5px;
-background-color: yellow;
-text-align: right;
-}
-.container {
- display: flex;
-}
-#p1 {
-color: white;
-background-color: lightgreen;
-clear: right;
-}
-#p2 {
-color: red;
-background-color: pink;
-clear: right;
-}
-#p3 {
-color: lightblue;
-background-color: violet;
-clear: right;
-}
-section {
-clear: right;
-}
+  <div class="col-lg-4 col-md-6 col-sm-12">
+  	<div class="box">
+  		<p class="content-name name1">Chicken</p>
+  		<p class="content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+  	</div>
+  </div>
 
-</style>
-<body style="background:lightgray;>
-<div class="container">
-<h1 style="color:blue; text-align:center;">Restaurant Menu</h1>
-</div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+  	<div class="box">
+   		<p class="content-name name2">Beef</p>
+   		<p class="content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+  	</div>
+  </div>
 
-<div>
-<p id="p1"></p>
-<p id="p2"></p>
-<p id="p3"></p>
-
-<div class="container">
-<div class="column">
-
-<h2>Starters</h2>
-<p id="p1"> Here you can see our various list of starters of any taste</p>
-</div>
-<div class="column">
-<h2> Main</h2>
-<p id="p2"> You can see our choice of different main dishes below</p>
-</div>
-<div class="column">
-<h2> Desserts</h2>
-<p id="p3"> Finish your experience with our beautiful desserts</p>
-</div>
-</div>
+  <div class="col-lg-4 col-md-12 col-sm-12">
+  	<div class="box">
+  		<p class="content-name name3">Sushi</p>
+  		<p class="content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+  	</div>	
+  </div>
 
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Responsive Layout</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<h1>Our Menu</h1>
+
+
+
+  <div class="col-lg-4 col-md-6 col-sm-12">
+  	<div class="box">
+  		<p class="content-name name1">Chicken</p>
+  		<p class="content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+  	</div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12">
+  	<div class="box">
+   		<p class="content-name name2">Beef</p>
+   		<p class="content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+  	</div>
+  </div>
+
+  <div class="col-lg-4 col-md-12 col-sm-12">
+  	<div class="box">
+  		<p class="content-name name3">Sushi</p>
+  		<p class="content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+  	</div>	
+  </div>
+
+</body>
+</html>
+ 206  Assignments/module-2/style.css 
+@@ -1,104 +1,104 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.row{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #ff4532;
+  font-size: 50px;
+}
+
+
+.box{
+  width: 100%;
+  overflow: none;
+}
+
+
+.content-name{
+  overflow: none;
+  text-align: center;
+  border: 4px solid black;
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  float: right;
+  margin-right: 36px;
+  margin-top: 0px;
+  font-weight: bold;
+  position: relative;
+}
+
+.content{
+  border: 5px solid black;
+  width: 90%;
+  height: auto;
+  margin: 2.5%;
+  color: black
+  font-size: 25px;
+  padding: 2%;
+  padding-top: 55px;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.name1{
+  background-color: #FFB6C1;
+}
+
+.name2{
+  color: white;
+  background-color: #FF0000;
+}
+.name3{
+  background-color: #FFFF00;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+  	float: left;
+    width: 33.33%;
+  }
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6,.col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    margin-left: -10px;
+    width: 100%;
+  }
+  .name3{
+    margin-right: 65px;
+    width: 100px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .col-sm-12 {
+  	float: left;
+    width: 100%;
+  }
+  .content-name{
+    margin-right: 30px;
+  }
+
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.row{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #ff4532;
+  font-size: 50px;
+}
+
+
+.box{
+  width: 100%;
+  overflow: none;
+}
+
+
+.content-name{
+  overflow: none;
+  text-align: center;
+  border: 4px solid black;
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  float: right;
+  margin-right: 36px;
+  margin-top: 0px;
+  font-weight: bold;
+  position: relative;
+}
+
+.content{
+  border: 5px solid black;
+  width: 90%;
+  height: auto;
+  margin: 2.5%;
+  color: black
+  font-size: 25px;
+  padding: 2%;
+  padding-top: 55px;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.name1{
+  background-color: #FFB6C1;
+}
+
+.name2{
+  color: white;
+  background-color: #FF0000;
+}
+.name3{
+  background-color: #FFFF00;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+  	float: left;
+    width: 33.33%;
+  }
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6,.col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    margin-left: -10px;
+    width: 100%;
+  }
+  .name3{
+    margin-right: 65px;
+    width: 100px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .col-sm-12 {
+  	float: left;
+    width: 100%;
+  }
+  .content-name{
+    margin-right: 30px;
+  }
+} 
+ 46  Assignments/module-3/index.html 
+@@ -0,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Module 3</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+<body>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Food, LLC</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="menu-item"><a href="#">Chicken</a></li>
+        <li class="menu-item"><a href="#">Beef</a></li> 
+        <li class="menu-item"><a href="#">Sushi</a></li> 
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+</body>
+</html>
+ 18  Assignments/module-3/style.css 
+@@ -0,0 +1,18 @@
+
+
+.navbar-brand{
+  font-size: 25px;
+}
+
+.navbar-nav{
+  font-size: 25px;
+  float: right;
+  margin-right: 30%;
+}
+
+
+@media (min-width: 768px){
+  .menu-item{
+    visibility: none;
+  } 
+}
